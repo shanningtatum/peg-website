@@ -8,27 +8,33 @@
       src="https://kit.fontawesome.com/8dadeab0df.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Perplexity Escape Games</title>
   </head>
   <body>
     <!-- SKIP LINK -->
-    <a href="#mainContent" class="skip-link">Skip to the main content</a>
+    <!-- <a href="#mainContent" class="skip-link">Skip to the main content</a> -->
     <!-- Nav Bar -->
-    <div class="announcement">
+    <!-- <div class="announcement">
       <div class="wrapper">
         <p>We are open! Book now!</p>
       </div>
-    </div>
+    </div> -->
 
     <div class="navBar">
       <div class="wrapper">
         <div class="logo">
           <h1>
-            <img src="./assets/peg-logo.jpg" alt="Link to home page." />
+            <img src="./assets/logo-transparent.png" alt="Link to home page." />
           </h1>
         </div>
-        <nav>
+        <nav class="navLinks">
           <ul>
             <li><a href="#">Rooms</a></li>
             <li><a href="#">Rates</a></li>
@@ -38,8 +44,10 @@
           </ul>
         </nav>
         <div class="contactLinks">
-          <a href="#">123-456-7890</a>
-          <a href="#">Book Now</a>
+          <ul>
+            <li><a href="#">123-456-7890</a></li>
+            <li><a href="#">Book Now</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -49,7 +57,7 @@
         <div class="textContainer">
           <h2>Get your locks off!</h2>
           <h3>Do you think you have what it takes to escape?</h3>
-          <a href="#">Learn More</a>
+          <a href="#" class="learnMore">Learn More</a>
         </div>
         <div class="socialContainer">
           <ul>
@@ -90,7 +98,7 @@
           eligendi quisquam mollitia nesciunt labore velit earum consequatur
           iste. Iste numquam obcaecati aut repudiandae? Expedita.
         </p>
-        <a href="#">Learn More</a>
+        <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
     <section class="rooms" id="rooms">
@@ -102,7 +110,7 @@
           eligendi quisquam mollitia nesciunt labore velit earum consequatur
           iste. Iste numquam obcaecati aut repudiandae? Expedita.
         </p>
-        <a href="#">Learn More</a>
+        <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
     <section class="rates" id="rates">
@@ -114,7 +122,7 @@
           eligendi quisquam mollitia nesciunt labore velit earum consequatur
           iste. Iste numquam obcaecati aut repudiandae? Expedita.
         </p>
-        <a href="#">Learn More</a>
+        <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
     <section class="events" id="events">
@@ -126,7 +134,7 @@
           eligendi quisquam mollitia nesciunt labore velit earum consequatur
           iste. Iste numquam obcaecati aut repudiandae? Expedita.
         </p>
-        <a href="#">Learn More</a>
+        <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
     <section class="faq" id="faq">
@@ -138,14 +146,35 @@
           eligendi quisquam mollitia nesciunt labore velit earum consequatur
           iste. Iste numquam obcaecati aut repudiandae? Expedita.
         </p>
-        <a href="#">Learn More</a>
+        <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
 
     <!-- FOOTER -->
 
     <footer>
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <ul>
+          <li><h5>Hours of Operation</h5></li>
+          <li>Mon - Wed: Closed</li>
+          <li>Thurs: 6PM - 10PM</li>
+          <li>Fri: 6PM - 1AM</li>
+          <li>Sat: 12PM - 1AM</li>
+          <li>Sun: 12PM - 10PM</li>
+        </ul>
+        <ul>
+          <li><h5>Contact</h5></li>
+          <li>Address: <a href="#">56 Bramsteele Rd Unit #2</a></li>
+          <li>Phone Number: <a href="#">905-595-5358</a></li>
+          <li>E-mail: <a href="#">info@perplexity.ca</a></li>
+        </ul>
+        <ul>
+          <li><h5>Follow Us</h5></li>
+          <li>Tiktok</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
