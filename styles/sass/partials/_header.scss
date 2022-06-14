@@ -1,0 +1,65 @@
+header{
+    background-image:url(/assets/bg.jpeg);
+    background-size:cover;
+
+
+    .wrapper{
+        border:2px red solid;
+        width:100%;
+        height:100vh;
+        display:flex;
+        position:relative;
+
+        .textContainer {
+            border:2px red solid;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-evenly;
+            position:absolute;
+            padding:10px;
+            margin: 15%;
+            height:30%;
+
+            h2{
+                font-family:$titleFont;
+                color:$white;
+                font-size:2rem;
+                margin:0;
+            }
+
+            h3{
+                font-family:$bodyFont;
+                color:$white;
+                font-size:1rem;
+                margin:0;
+            }
+
+            .learnMore{
+                width:max-content;
+            }
+        }   
+
+        .socialContainer{
+            position:absolute;
+            right:0;
+            top:35vh;
+            
+            ul{
+                padding:10px;
+                list-style:none;
+
+                li{
+                    padding:20px;
+                }
+                a{
+                    color:$white;
+                    font-size:1.5rem;
+                    :hover{
+                        color:$red; 
+                    }
+                }
+            }
+        }
+    }
+
+}

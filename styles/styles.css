@@ -228,11 +228,77 @@ html {
   font-size: 125%;
 }
 
-.navBar {
+header {
   background-image: url(/assets/bg.jpeg);
   background-size: cover;
+}
+header .wrapper {
+  border: 2px red solid;
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+header .wrapper .textContainer {
+  border: 2px red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  padding: 10px;
+  margin: 15%;
+  height: 30%;
+}
+header .wrapper .textContainer h2 {
+  font-family: "Bebas Neue";
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+header .wrapper .textContainer h3 {
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+header .wrapper .textContainer .learnMore {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .wrapper .socialContainer {
+  position: absolute;
+  right: 0;
+  top: 35vh;
+}
+header .wrapper .socialContainer ul {
+  padding: 10px;
+  list-style: none;
+}
+header .wrapper .socialContainer ul li {
+  padding: 20px;
+}
+header .wrapper .socialContainer ul a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+header .wrapper .socialContainer ul a :hover {
+  color: #d01f25;
+}
+
+.navBar {
+  border: 2px red solid;
+  width: 100%;
+  position: absolute;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -278,6 +344,9 @@ html {
   text-decoration: none;
   font-size: 1.5rem;
 }
+.navBar .wrapper .navLinks a:hover {
+  color: #d01f25;
+}
 .navBar .wrapper .contactLinks {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
@@ -296,6 +365,13 @@ html {
   font-family: "Bebas Neue", sans-serif;
   color: #fff;
   text-decoration: none;
+}
+.navBar .wrapper .contactLinks ul a:hover {
+  color: #d01f25;
+}
+
+h2 {
+  font-family: "Bebas Neue";
 }
 
 .learnMore {
