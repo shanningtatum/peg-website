@@ -1,0 +1,35 @@
+h2{
+    font-family:$titleFont;
+}
+
+h5{
+    font-family:$titleFont;
+    font-size:1.1rem;
+    position:relative;
+    padding-bottom:10px;
+    letter-spacing:0.1rem;
+
+    &::before{
+        position: absolute;
+        bottom:0;
+        content:("");
+        background-color:$red;
+        width:30px;
+        height:3px;
+    }
+}
+
+.footerInfo p{
+    margin:0;
+    font-family:$titleFont;
+}
+
+.learnMore{
+    @include buttonStyles();
+    transition:0.3s;
+}
+
+.learnMore:hover{
+    background-color:$white;
+    color:$black;
+}

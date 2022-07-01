@@ -1,0 +1,26 @@
+footer{
+    background-color:$black;
+    color:$white;
+
+    .wrapper{
+        display:flex;
+        flex-direction:column;
+
+        .footerInfo{
+            display:flex;  
+            justify-content: space-evenly;
+
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        .copyrightInfo{
+            border-top: 2px rgba($color:$white, $alpha:0.1) solid;
+            text-align:center;
+            font-family:$titleFont;
+            letter-spacing:0.2rem;
+        }
+    }
+}

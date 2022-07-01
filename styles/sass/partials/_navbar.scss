@@ -1,8 +1,37 @@
+
+.skip-link{
+    position:absolute;
+    left:-1000px;
+    top:5px;
+    background-color:transparent;
+    color:black;
+    z-index:10;
+
+    &:focus{
+        left:0px;
+    }
+}
+
+.announcement{
+    background-color:$grey;
+    color:$white;
+    p{
+        font-size:0.8rem;
+        // font-weight:bold;
+        font-family:$bodyFont;
+        text-align:center;
+        padding:10px 0;
+        margin:0;
+    }
+
+}
+
 .navBar{
-    border:2px red solid;
+    z-index:10;
     width:100%;
     position:absolute;
     .wrapper{
+        height:12vh;
         display:flex;
         flex-direction:row;
         align-items:center;
@@ -33,6 +62,7 @@
                 color:$white;
                 text-decoration:none;
                 font-size:1.5rem;
+                transition:color 0.3s;
 
             }
             a:hover{
@@ -46,20 +76,44 @@
             flex-direction:column;
 
             ul{
-                list-style:none;
+                text-align:center;
 
+                list-style:none;
+                padding:0;
+
+                li{
+                    margin:20px 0;
+                    white-space:nowrap;
+                }
 
                 a{
                     font-family:'Bebas Neue',sans-serif;
                     color:$white;
                     text-decoration:none;
                 }
-                a:hover{
-                    color:$red;
+
+                .callBtn{
+                    transition:0.3s;
+                    &:hover, &:focus{
+                        color:$red;
+                    }
                 }
-                
+                .bookNowBtn{
+                    background-color:$red;
+                    padding:10px 15px;
+                    border:2px $red solid;
+                    white-space:nowrap;
+                    transition:0.3s;
+                    &:hover, &:focus{
+                        background-color:$white;
+                        color:$black;
+                    }
+                }
             }
+
+
         }
     }
     
 }
+

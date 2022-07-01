@@ -19,13 +19,13 @@
   </head>
   <body>
     <!-- SKIP LINK -->
-    <!-- <a href="#mainContent" class="skip-link">Skip to the main content</a> -->
+    <a href="#mainContent" class="skip-link">Skip to the main content</a>
     <!-- Nav Bar -->
-    <!-- <div class="announcement">
+    <div class="announcement">
       <div class="wrapper">
         <p>We are open! Book now!</p>
       </div>
-    </div> -->
+    </div>
 
     <div class="navBar">
       <div class="wrapper">
@@ -45,8 +45,14 @@
         </nav>
         <div class="contactLinks">
           <ul>
-            <li><a href="#">123-456-7890</a></li>
-            <li><a href="#">Book Now</a></li>
+            <li>
+              <a href="#" class="callBtn"
+                ><i class="fa-solid fa-phone"
+                  ><span class="sr-only">Link to call us</span></i
+                >&nbsp;123-456-7890</a
+              >
+            </li>
+            <li><a href="#" class="bookNowBtn">Book Now</a></li>
           </ul>
         </div>
       </div>
@@ -87,7 +93,7 @@
       </div>
     </header>
 
-    <!-- MAIN -->
+    <!-- MAIN STARTS -->
 
     <section class="about" id="about">
       <div class="wrapper">
@@ -149,31 +155,60 @@
         <a href="#" class="learnMore">Learn More</a>
       </div>
     </section>
+    <!-- MAIN ENDS -->
 
     <!-- FOOTER -->
-
     <footer>
       <div class="wrapper">
-        <ul>
-          <li><h5>Hours of Operation</h5></li>
-          <li>Mon - Wed: Closed</li>
-          <li>Thurs: 6PM - 10PM</li>
-          <li>Fri: 6PM - 1AM</li>
-          <li>Sat: 12PM - 1AM</li>
-          <li>Sun: 12PM - 10PM</li>
-        </ul>
-        <ul>
-          <li><h5>Contact</h5></li>
-          <li>Address: <a href="#">56 Bramsteele Rd Unit #2</a></li>
-          <li>Phone Number: <a href="#">905-595-5358</a></li>
-          <li>E-mail: <a href="#">info@perplexity.ca</a></li>
-        </ul>
-        <ul>
-          <li><h5>Follow Us</h5></li>
-          <li>Tiktok</li>
-          <li>Instagram</li>
-          <li>Facebook</li>
-        </ul>
+        <div class="footerInfo">
+          <ul>
+            <li><h5>Hours of Operation</h5></li>
+            <li><p>Mon - Wed: Closed</p></li>
+            <li><p>Thurs: 6PM - 10PM</p></li>
+            <li><p>Fri: 6PM - 1AM</p></li>
+            <li><p>Sat: 12PM - 1AM</p></li>
+            <li><p>Sun: 12PM - 10PM</p></li>
+          </ul>
+          <ul>
+            <li><h5>Contact</h5></li>
+            <li>
+              <p>Address: <a href="#">56 Bramsteele Rd Unit #2</a></p>
+            </li>
+            <li>
+              <p>Phone Number: <a href="#">905-595-5358</a></p>
+            </li>
+            <li>
+              <p>E-mail: <a href="#">info@perplexity.ca</a></p>
+            </li>
+          </ul>
+          <ul>
+            <li><h5>Follow Us</h5></li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook" aria-hidden="true"
+                  ><span class="sr-only">Link to Facebook</span></i
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram" aria-hidden="true"
+                  ><span class="sr-only">Link to Instagram</span></i
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-tiktok" aria-hidden="true"
+                  ><span class="sr-only">Link to TikTok</span></i
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="copyrightInfo">
+          <h3>Perplexity Escape Games © 2022</h3>
+        </div>
       </div>
     </footer>
   </body>
