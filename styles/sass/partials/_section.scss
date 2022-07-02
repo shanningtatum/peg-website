@@ -46,20 +46,21 @@
 
         li{
             width:calc((100% / 6));
+            position: relative;
 
             a{
                 text-decoration:none;
                 color:$white;
-                transition: color 0.3s;
-    
-                &:hover, &:focus{
-                    color:rgba($color:$red,$alpha:0.7);
-                }
             }
         }
 
         h3{
             text-align:center;
+            transition: color 0.3s;
+    
+            &:hover, &:focus{
+                color:rgba($color:$red,$alpha:0.7);
+            }
         }
 
         img{
@@ -71,12 +72,23 @@
             }
         }
 
+        p{
+            background-color:$red;
+            font-family:$titleFont;
+            font-size:1rem;
+            padding:5px 10px;
+            left:-10px;
+            bottom:150px;
+            z-index:1;
+            position: absolute;
+            
+        }
+
         .learnMore{
             margin:0 auto;
             text-align:center;
             width:max-content;
         }
-
         
     }
 }
@@ -85,9 +97,12 @@
 .rates{
     background-color:lightgrey;
     .wrapper{
+        display:flex;
+        flex-direction:column;
         .roomRates{
             display:flex;
             justify-content:space-evenly;
+            margin:50px;
         }
 
         .rateOne, .rateTwo{
@@ -95,14 +110,27 @@
             flex-direction:column;
         }
 
+        .rateOne .rateHeader{
+            background-image:url(../assets/60-minute.png);
+            background-size:cover;
+            background-position:center;
+        }
+
+        .rateTwo .rateHeader{
+            background-image:url(../assets/75-minute.png);
+            background-size:cover;
+            background-position:center;
+        }
         .rateHeader{
-            background-color:red;
+            color:$white;
+            text-shadow:2px 2px 3px $black; 
             padding:10px;
             flex-basis:50%;
         }
 
         .rateList{
-            background-color:orange;
+            background-color:rgba($color:$black, $alpha:0.6);
+            color:$white;
             padding:10px;
             flex-basis:50%;
             ul{
@@ -111,14 +139,54 @@
             }
         }
         p{
+            margin:0;
             text-align:center;
+        }
+        .learnMore{
+            margin:0 auto;
+            text-align:center;
+            width:max-content;
         }
     }
 }
 
 // EVENTS
 .events{
-    background-color:orange;
+    background-color:bisque;
+
+    .wrapper{
+        .eventsGallery{
+            ul{
+                display:flex;
+                flex-wrap:wrap;
+                list-style:none;
+                padding:0;
+    
+                li {
+                    flex-basis:calc(100% / 3);
+
+                    &:first-child{
+                        text-align:justify;
+                        flex-basis:100%;
+                        // padding-bottom:30px;
+                    }
+
+                    .learnMore{
+                        display:block;
+                        text-align:center;
+                        width:max-content;
+                        margin:20px auto;
+                    }
+                }
+    
+                img{
+                    width:100%;
+                }
+            }
+
+        }
+
+    }
 }
 
 // FAQ

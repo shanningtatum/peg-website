@@ -278,6 +278,11 @@ h5::before {
 }
 
 .learnMore {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
   text-decoration: none;
   background-color: #d01f25;
   border: 2px #d01f25 solid;
@@ -446,7 +451,7 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-.navBar .wrapper .navLinks a:hover {
+.navBar .wrapper .navLinks a:hover, .navBar .wrapper .navLinks a:focus {
   color: #d01f25;
 }
 .navBar .wrapper .contactLinks {
@@ -550,18 +555,19 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 }
 .rooms .wrapper li {
   width: 16.6666666667%;
+  position: relative;
 }
 .rooms .wrapper li a {
   text-decoration: none;
   color: #fff;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-.rooms .wrapper li a:hover, .rooms .wrapper li a:focus {
-  color: rgba(208, 31, 37, 0.7);
 }
 .rooms .wrapper h3 {
   text-align: center;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.rooms .wrapper h3:hover, .rooms .wrapper h3:focus {
+  color: rgba(208, 31, 37, 0.7);
 }
 .rooms .wrapper img {
   width: 100%;
@@ -574,6 +580,16 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
+.rooms .wrapper p {
+  background-color: #d01f25;
+  font-family: "Bebas Neue";
+  font-size: 1rem;
+  padding: 5px 10px;
+  left: -10px;
+  bottom: 150px;
+  z-index: 1;
+  position: absolute;
+}
 .rooms .wrapper .learnMore {
   margin: 0 auto;
   text-align: center;
@@ -585,6 +601,15 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 .rates {
   background-color: lightgrey;
 }
+.rates .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .rates .wrapper .roomRates {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,6 +617,7 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 50px;
 }
 .rates .wrapper .rateOne, .rates .wrapper .rateTwo {
   display: -webkit-box;
@@ -602,14 +628,26 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.rates .wrapper .rateOne .rateHeader {
+  background-image: url(../assets/60-minute.png);
+  background-size: cover;
+  background-position: center;
+}
+.rates .wrapper .rateTwo .rateHeader {
+  background-image: url(../assets/75-minute.png);
+  background-size: cover;
+  background-position: center;
+}
 .rates .wrapper .rateHeader {
-  background-color: red;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
   padding: 10px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 .rates .wrapper .rateList {
-  background-color: orange;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   padding: 10px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -619,11 +657,48 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   list-style: none;
 }
 .rates .wrapper p {
+  margin: 0;
   text-align: center;
+}
+.rates .wrapper .learnMore {
+  margin: 0 auto;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .events {
-  background-color: orange;
+  background-color: bisque;
+}
+.events .wrapper .eventsGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.events .wrapper .eventsGallery ul li {
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+.events .wrapper .eventsGallery ul li:first-child {
+  text-align: justify;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.events .wrapper .eventsGallery ul li .learnMore {
+  display: block;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px auto;
+}
+.events .wrapper .eventsGallery ul img {
+  width: 100%;
 }
 
 .faq {

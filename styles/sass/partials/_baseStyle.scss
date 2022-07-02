@@ -47,6 +47,9 @@ h5{
 }
 
 .learnMore{
+    display:block;
+    width:max-content;
+    margin:0 auto;
     @include buttonStyles();
     transition:0.3s;
 }
