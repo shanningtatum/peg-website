@@ -231,11 +231,23 @@ html {
 h2 {
   font-family: "Bebas Neue";
   letter-spacing: 0.1rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #d01f25;
+  bottom: 0;
 }
 
 h3 {
-  font-family: "Poppins";
-  font-size: 0.9rem;
+  font-family: "Bebas Neue";
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 h5 {
@@ -513,11 +525,21 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 .rooms {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.rooms .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .rooms .wrapper h2 {
   color: #fff;
 }
 .rooms .wrapper ul {
   padding: 0;
+  margin: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -528,6 +550,15 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 }
 .rooms .wrapper li {
   width: 16.6666666667%;
+}
+.rooms .wrapper li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.rooms .wrapper li a:hover, .rooms .wrapper li a:focus {
+  color: rgba(208, 31, 37, 0.7);
 }
 .rooms .wrapper h3 {
   text-align: center;
@@ -543,14 +574,12 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-.rooms .wrapper a {
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-.rooms .wrapper a:hover, .rooms .wrapper a:focus {
-  color: rgba(208, 31, 37, 0.7);
+.rooms .wrapper .learnMore {
+  margin: 0 auto;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .rates {
