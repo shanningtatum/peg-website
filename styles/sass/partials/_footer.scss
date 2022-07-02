@@ -13,6 +13,7 @@ footer{
         }
 
         ul{
+            padding:0;
             list-style:none;
         }
 
@@ -22,5 +23,30 @@ footer{
             font-family:$titleFont;
             letter-spacing:0.2rem;
         }
+
+        .contact a {
+            color:$white;
+            text-decoration:none;
+            transition:color 0.3s;
+
+            &:hover, &:focus{
+                color:$red;
+            }
+        }
+
+        .socialLinks ul {
+            display:flex;
+            justify-content:space-between;
+
+            a{
+                color:$white;
+                transition:color 0.3s;
+
+                &:hover, &:focus{
+                    color:$red;
+                }
+            }
+        }
+
     }
 }

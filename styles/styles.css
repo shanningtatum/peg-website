@@ -230,6 +230,12 @@ html {
 
 h2 {
   font-family: "Bebas Neue";
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 0.9rem;
 }
 
 h5 {
@@ -246,6 +252,12 @@ h5::before {
   background-color: #d01f25;
   width: 30px;
   height: 3px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .footerInfo p {
@@ -267,6 +279,15 @@ h5::before {
 .learnMore:hover {
   background-color: #fff;
   color: #000;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 0.8rem;
+}
+
+section {
+  padding: 10px;
 }
 
 header {
@@ -317,7 +338,7 @@ header .wrapper .textContainer .learnMore {
 }
 header .wrapper .socialContainer {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 35vh;
 }
 header .wrapper .socialContainer ul {
@@ -461,6 +482,89 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
   color: #000;
 }
 
+.about {
+  background-color: bisque;
+  padding: 0;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+.about .wrapper .aboutImage {
+  background-image: url("../../assets/about-2.png");
+  background-size: cover;
+  background-position: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.about .wrapper .aboutText {
+  padding: 50px;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.about .wrapper .aboutText h2 {
+  margin: 0;
+}
+
+.rooms {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.rooms .wrapper h2 {
+  color: #fff;
+}
+.rooms .wrapper ul {
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.rooms .wrapper li {
+  width: 16.6666666667%;
+}
+.rooms .wrapper h3 {
+  text-align: center;
+}
+.rooms .wrapper img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.rooms .wrapper img:hover, .rooms .wrapper img:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.rooms .wrapper a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.rooms .wrapper a:hover, .rooms .wrapper a:focus {
+  color: rgba(208, 31, 37, 0.7);
+}
+
+.rates {
+  background-color: blue;
+}
+
+.events {
+  background-color: orange;
+}
+
+.faq {
+  background-color: midnightblue;
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -483,6 +587,7 @@ footer .wrapper .footerInfo {
           justify-content: space-evenly;
 }
 footer .wrapper ul {
+  padding: 0;
   list-style: none;
 }
 footer .wrapper .copyrightInfo {
@@ -490,4 +595,29 @@ footer .wrapper .copyrightInfo {
   text-align: center;
   font-family: "Bebas Neue";
   letter-spacing: 0.2rem;
+}
+footer .wrapper .contact a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+footer .wrapper .contact a:hover, footer .wrapper .contact a:focus {
+  color: #d01f25;
+}
+footer .wrapper .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .wrapper .socialLinks ul a {
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+footer .wrapper .socialLinks ul a:hover, footer .wrapper .socialLinks ul a:focus {
+  color: #d01f25;
 }

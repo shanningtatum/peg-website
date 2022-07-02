@@ -1,0 +1,86 @@
+// ABOUT SECTION
+.about{
+    background-color:bisque;
+    padding:0;
+
+    .wrapper{
+        display:flex;
+        width:100%;
+        margin:0;
+        max-width:none;
+        
+        .aboutImage{
+            background-image:url('../../assets/about-2.png');
+            background-size:cover;
+            background-position:center;
+            flex-basis:30%;
+        }
+        .aboutText{
+
+            h2{
+                margin:0;
+            }
+            padding:50px;
+            flex-basis:70%;
+        }
+    }
+}
+
+// OUR ROOMS
+.rooms{
+    background-color:rgba($color:$black, $alpha:0.8);
+    .wrapper{
+
+        h2{
+            color:$white;
+        }
+        ul{
+            padding:0;
+            justify-content:space-between;
+            display:flex;
+            list-style:none;
+        }
+
+        li{
+            width:calc((100% / 6));
+        }
+
+        h3{
+            text-align:center;
+        }
+
+        img{
+            width:100%;
+            transition: transform 0.3s;
+
+            &:hover, &:focus{
+                transform:scale(0.9);
+            }
+        }
+
+        a{
+            text-decoration:none;
+            color:$white;
+            transition: color 0.3s;
+
+            &:hover, &:focus{
+                color:rgba($color:$red,$alpha:0.7);
+            }
+        }
+    }
+}
+
+// RATES
+.rates{
+    background-color:blue;
+}
+
+// EVENTS
+.events{
+    background-color:orange;
+}
+
+// FAQ
+.faq{
+    background-color:midnightblue;
+}
