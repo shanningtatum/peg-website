@@ -585,6 +585,17 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 .rates {
   background-color: blue;
 }
+.rates .wrapper .gameTypes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px red solid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
 
 .events {
   background-color: orange;

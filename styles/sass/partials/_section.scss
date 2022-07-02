@@ -84,6 +84,15 @@
 // RATES
 .rates{
     background-color:blue;
+    .wrapper{
+        .gameTypes{
+            display:flex;
+            border:2px red solid;
+            justify-content:space-evenly;
+            list-style:none;
+            padding:0;
+        }
+    }
 }
 
 // EVENTS
