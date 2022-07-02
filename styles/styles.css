@@ -583,18 +583,43 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 }
 
 .rates {
-  background-color: blue;
+  background-color: lightgrey;
 }
-.rates .wrapper .gameTypes {
+.rates .wrapper .roomRates {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px red solid;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style: none;
+}
+.rates .wrapper .rateOne, .rates .wrapper .rateTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.rates .wrapper .rateHeader {
+  background-color: red;
+  padding: 10px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.rates .wrapper .rateList {
+  background-color: orange;
+  padding: 10px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.rates .wrapper .rateList ul {
   padding: 0;
+  list-style: none;
+}
+.rates .wrapper p {
+  text-align: center;
 }
 
 .events {

@@ -83,14 +83,35 @@
 
 // RATES
 .rates{
-    background-color:blue;
+    background-color:lightgrey;
     .wrapper{
-        .gameTypes{
+        .roomRates{
             display:flex;
-            border:2px red solid;
             justify-content:space-evenly;
-            list-style:none;
-            padding:0;
+        }
+
+        .rateOne, .rateTwo{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .rateHeader{
+            background-color:red;
+            padding:10px;
+            flex-basis:50%;
+        }
+
+        .rateList{
+            background-color:orange;
+            padding:10px;
+            flex-basis:50%;
+            ul{
+                padding:0;
+                list-style:none;
+            }
+        }
+        p{
+            text-align:center;
         }
     }
 }
