@@ -43,7 +43,8 @@ h5{
 }
 .footerInfo p{
     margin:0;
-    font-family:$titleFont;
+    font-family:$footerFont;
+    text-transform:uppercase;
 }
 
 .learnMore{

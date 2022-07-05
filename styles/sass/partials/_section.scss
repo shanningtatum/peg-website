@@ -191,5 +191,8 @@
 
 // FAQ
 .faq{
-    background-color:midnightblue;
+    background-color:rgba($color:$black, $alpha:0.8);
+    .wrapper{
+        color:$white;
+    }
 }

@@ -9,12 +9,13 @@ footer{
         .footerInfo{
             display:flex;  
             justify-content: space-evenly;
-
         }
+
 
         ul{
             padding:0;
             list-style:none;
+
         }
 
         .copyrightInfo{
@@ -23,16 +24,19 @@ footer{
             font-family:$titleFont;
             letter-spacing:0.2rem;
         }
-
-        .contact a {
-            color:$white;
-            text-decoration:none;
-            transition:color 0.3s;
-
-            &:hover, &:focus{
-                color:$red;
+        
+        .contact{
+            a {
+                color:$white;
+                text-decoration:none;
+                transition:color 0.3s;
+                text-align:right;
+    
+                &:hover, &:focus{
+                    color:$red;
+                }
             }
-        }
+        } 
 
         .socialLinks ul {
             display:flex;

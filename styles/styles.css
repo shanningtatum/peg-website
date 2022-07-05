@@ -274,7 +274,8 @@ h5::before {
 
 .footerInfo p {
   margin: 0;
-  font-family: "Bebas Neue";
+  font-family: "Oswald";
+  text-transform: uppercase;
 }
 
 .learnMore {
@@ -299,7 +300,7 @@ h5::before {
 }
 
 p {
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 0.8rem;
 }
 
@@ -344,7 +345,7 @@ header .wrapper .textContainer h2 {
   margin: 0;
 }
 header .wrapper .textContainer h3 {
-  font-family: "Poppins";
+  font-family: "Montserrat";
   color: #fff;
   font-size: 1rem;
   margin: 0;
@@ -394,7 +395,7 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 }
 .announcement p {
   font-size: 0.8rem;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   text-align: center;
   padding: 10px 0;
   margin: 0;
@@ -703,7 +704,10 @@ header .wrapper .socialContainer ul a:hover, header .wrapper .socialContainer ul
 }
 
 .faq {
-  background-color: midnightblue;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.faq .wrapper {
+  color: #fff;
 }
 
 footer {
@@ -742,6 +746,7 @@ footer .wrapper .contact a {
   text-decoration: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  text-align: right;
 }
 footer .wrapper .contact a:hover, footer .wrapper .contact a:focus {
   color: #d01f25;
